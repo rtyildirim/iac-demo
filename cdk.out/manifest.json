@@ -1,0 +1,928 @@
+{
+  "version": "14.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "IacDemoStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "IacDemoStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/IacDemoStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.72f287be44ae8b387e11098cd234f4547c81e77fe12c49a92fbee7af43acbfdd.zip",
+              "id": "72f287be44ae8b387e11098cd234f4547c81e77fe12c49a92fbee7af43acbfdd",
+              "packaging": "file",
+              "sourceHash": "72f287be44ae8b387e11098cd234f4547c81e77fe12c49a92fbee7af43acbfdd",
+              "s3BucketParameter": "AssetParameters72f287be44ae8b387e11098cd234f4547c81e77fe12c49a92fbee7af43acbfddS3Bucket21377BCD",
+              "s3KeyParameter": "AssetParameters72f287be44ae8b387e11098cd234f4547c81e77fe12c49a92fbee7af43acbfddS3VersionKeyE0584E52",
+              "artifactHashParameter": "AssetParameters72f287be44ae8b387e11098cd234f4547c81e77fe12c49a92fbee7af43acbfddArtifactHash77A2839F"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "IacDemoStack.addFileAsset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:22:28)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/BlogTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "BlogTable4F8B6C55"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "new Table (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:707:38)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:13:23)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/BlogTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BlogTable4F8B6C55",
+            "trace": [
+              "new Table (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:678:18)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:13:23)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoFunctionServiceRoleBDC9F624",
+            "trace": [
+              "new Role (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Function (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-lambda/lib/function.ts:318:31)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:22:28)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoFunctionServiceRoleDefaultPolicy68CFB3E5",
+            "trace": [
+              "new Policy (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Function.addToPrincipal (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-iam/lib/grant.ts:92:61)",
+              "Table.combinedGrant (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:522:29)",
+              "Table.grantReadWriteData (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:349:17)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:34:15)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoFunctionEDE7E209",
+            "trace": [
+              "new Function (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-lambda/lib/function.ts:388:35)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:22:28)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/AssetParameters/72f287be44ae8b387e11098cd234f4547c81e77fe12c49a92fbee7af43acbfdd/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters72f287be44ae8b387e11098cd234f4547c81e77fe12c49a92fbee7af43acbfddS3Bucket21377BCD",
+            "trace": [
+              "new FileAssetParameters (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "IacDemoStack.addFileAsset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:22:28)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/AssetParameters/72f287be44ae8b387e11098cd234f4547c81e77fe12c49a92fbee7af43acbfdd/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters72f287be44ae8b387e11098cd234f4547c81e77fe12c49a92fbee7af43acbfddS3VersionKeyE0584E52",
+            "trace": [
+              "new FileAssetParameters (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "IacDemoStack.addFileAsset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:22:28)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/AssetParameters/72f287be44ae8b387e11098cd234f4547c81e77fe12c49a92fbee7af43acbfdd/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters72f287be44ae8b387e11098cd234f4547c81e77fe12c49a92fbee7af43acbfddArtifactHash77A2839F",
+            "trace": [
+              "new FileAssetParameters (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "IacDemoStack.addFileAsset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:22:28)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiEB9AC4F8",
+            "trace": [
+              "new RestApi (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:463:22)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:37:21)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiCloudWatchRole41B4769F",
+            "trace": [
+              "new Role (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "RestApi._configureCloudWatchRole (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:289:18)",
+              "new RestApi (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:481:12)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:37:21)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiAccountCD80792E",
+            "trace": [
+              "RestApi._configureCloudWatchRole (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:294:22)",
+              "new RestApi (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:481:12)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:37:21)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiDeploymentA6B926936525be57528825073594c82739004de7",
+            "trace": [
+              "new Deployment (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/deployment.ts:34:21)",
+              "RestApi._configureDeployment (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:318:32)",
+              "new RestApi (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:484:10)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:37:21)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/DeploymentStage.beta/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiDeploymentStagebetaEEF821DD",
+            "trace": [
+              "new Stage (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/stage.ts:136:22)",
+              "RestApi._configureDeployment (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:328:30)",
+              "new RestApi (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:484:10)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:37:21)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiEndpoint97BF39FB",
+            "trace": [
+              "RestApi._configureDeployment (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:333:7)",
+              "new RestApi (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:484:10)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:37:21)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/Default/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiOPTIONS880AF6C7",
+            "trace": [
+              "new Method (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "RootResource.addMethod (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "RootResource.addCorsPreflight (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:201:17)",
+              "new RootResource (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:612:12)",
+              "new RestApi (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:489:17)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:37:21)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/Default/blogs/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiblogs74069DBE",
+            "trace": [
+              "new Resource (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:342:22)",
+              "RootResource.addResource (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:91:12)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:54:32)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/Default/blogs/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiblogsOPTIONS209BC069",
+            "trace": [
+              "new Method (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "Resource.addMethod (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "Resource.addCorsPreflight (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:201:17)",
+              "new Resource (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:368:12)",
+              "RootResource.addResource (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:91:12)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:54:32)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/Default/blogs/GET/ApiPermission.IacDemoStackIacDemoRestApi3F65DA59.GET..blogs": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiblogsGETApiPermissionIacDemoStackIacDemoRestApi3F65DA59GETblogs38C02DC3",
+            "trace": [
+              "Function.addPermission (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
+              "new Method (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:55:34)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/Default/blogs/GET/ApiPermission.Test.IacDemoStackIacDemoRestApi3F65DA59.GET..blogs": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiblogsGETApiPermissionTestIacDemoStackIacDemoRestApi3F65DA59GETblogs93C208FC",
+            "trace": [
+              "Function.addPermission (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
+              "new Method (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:55:34)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/Default/blogs/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiblogsGET9C1FA21B",
+            "trace": [
+              "new Method (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "Resource.addMethod (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:55:34)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/Default/blogs/POST/ApiPermission.IacDemoStackIacDemoRestApi3F65DA59.POST..blogs": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiblogsPOSTApiPermissionIacDemoStackIacDemoRestApi3F65DA59POSTblogs570C8307",
+            "trace": [
+              "Function.addPermission (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
+              "new Method (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:58:34)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/Default/blogs/POST/ApiPermission.Test.IacDemoStackIacDemoRestApi3F65DA59.POST..blogs": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiblogsPOSTApiPermissionTestIacDemoStackIacDemoRestApi3F65DA59POSTblogs4420BCF9",
+            "trace": [
+              "Function.addPermission (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
+              "new Method (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:58:34)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/Default/blogs/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiblogsPOST79B4BD54",
+            "trace": [
+              "new Method (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "Resource.addMethod (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:58:34)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/Default/blogs/{blogId}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiblogsblogId2C0C4DBD",
+            "trace": [
+              "new Resource (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:342:22)",
+              "Resource.addResource (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:91:12)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:61:24)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/Default/blogs/{blogId}/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiblogsblogIdOPTIONS76038038",
+            "trace": [
+              "new Method (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "Resource.addMethod (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "Resource.addCorsPreflight (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:201:17)",
+              "new Resource (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:368:12)",
+              "Resource.addResource (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:91:12)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:61:24)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/Default/blogs/{blogId}/GET/ApiPermission.IacDemoStackIacDemoRestApi3F65DA59.GET..blogs.{blogId}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiblogsblogIdGETApiPermissionIacDemoStackIacDemoRestApi3F65DA59GETblogsblogId2CE3C0D3",
+            "trace": [
+              "Function.addPermission (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
+              "new Method (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:62:26)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/Default/blogs/{blogId}/GET/ApiPermission.Test.IacDemoStackIacDemoRestApi3F65DA59.GET..blogs.{blogId}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiblogsblogIdGETApiPermissionTestIacDemoStackIacDemoRestApi3F65DA59GETblogsblogIdA0D825B4",
+            "trace": [
+              "Function.addPermission (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
+              "new Method (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:62:26)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/IacDemoRestApi/Default/blogs/{blogId}/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IacDemoRestApiblogsblogIdGET6AFE6856",
+            "trace": [
+              "new Method (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "Resource.addMethod (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:62:26)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/apiUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiUrl",
+            "trace": [
+              "new IacDemoStack (/Users/tyildirim/workspace/iac-demo/lib/iac-demo-stack.ts:74:5)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/bin/iac-demo.ts:8:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/IacDemoStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:467:12)",
+              "process.emit (/Users/tyildirim/workspace/iac-demo/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/IacDemoStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/tyildirim/workspace/iac-demo/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:467:12)",
+              "process.emit (/Users/tyildirim/workspace/iac-demo/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "IacDemoStack"
+    }
+  }
+}

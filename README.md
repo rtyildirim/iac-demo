@@ -1,2 +1,3 @@
-# iac-demo
-This repository is a demo project for infrastructure as code (IaC) using AWS Cloud Development Kit (CDK)
+# Welcome to your CDK TypeScript project!
+
+`./deploy.sh`
