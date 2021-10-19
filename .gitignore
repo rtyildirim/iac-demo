@@ -102,4 +102,14 @@ dist
 
 # TernJS port file
 .tern-port
+
 .DS_Store
+
+.cdk.staging
+cdk.out
+
+*.js
+!jest.config.js
+*.d.ts
+node_modules
+*.zip
