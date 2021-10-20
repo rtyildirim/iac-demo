@@ -1,7 +1,9 @@
 # Welcome to your CDK TypeScript project!
 
 You can deploy this service to AWS by running the following command and the script (You must have valid AWS credentials and AWS CDK and node.js installed):
+
 `npm install`
+
 `./deploy.sh`
 
 
